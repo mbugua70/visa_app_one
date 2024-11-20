@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>VISA</title>
+
+  <!-- start of filepond library -->
+  <link href="https://unpkg.com/filepond@^4/dist/filepond.css" rel="stylesheet" />
+  <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet" />
+  <link
+      href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css"
+      rel="stylesheet"
+  />
+  <link
+      href="https://unpkg.com/filepond-plugin-image-edit/dist/filepond-plugin-image-edit.css"
+      rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./js/filePond/filepond.css">
+
+  <!-- end of filepond lib -->
+
+  <link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
+	<link rel="stylesheet" href="css/materialize.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+
+	<nav>
+		<div class=" topmenu left_menu">
+
+		</div>
+		<div class=" topmenu centered_menu">
+			MALL ACTIVATION
+		</div>
+		<div class=" topmenu right_menu">
+    <a href="index.html" ><i class="fa fa-home fa-2x"></i></a>
+    </div>
+		 </nav>
+
+
+ <div class="main_body">
+
+
+  <div class="row parcel_form">
+
+ <div class="row">
+    <div class="col s12 m5">
+      <div class="card-panel  deep-orange darken-3">
+        <span class="white-text">
+          Your Details<br>
+           Name: <span id="rba_name"></span><br>
+           Phone: <span id="rba_phone"></span><br>
+           Region: <span id="rba_region"></span><br>
+
+        </span>
+        <br>
+        <a class="btn btn-small yellow darken-2" href="registration.html">Edit Details</a>
+      </div>
+    </div>
+  </div>
+
+<form id="data_form">
+           <input id="ba_name" name="ba_name"  type="hidden">
+           <input id="ba_phone" name="ba_phone"  type="hidden">
+           <input id="ba_region" name="ba_region"  type="hidden">
+           <input id="place" name="place" value="DEALER"  type="hidden">
+
+
+
+        <!-- insert location details (gps) -->
+          <h1>Activation Details</h1>
+
+
+      <div class="input-field col s12">
+          <span>Date of Activation</span><br>
+            <input id="sub_1_1" name="sub_1_1" placeholder="Date" type="date">
+
+        </div>
+
+          <div class="input-field col s12">
+          <span>Name of Mall</span><br>
+            <input id="sub_1_2" name="sub_1_2" placeholder="Name of Mall" type="text">
+
+        </div>
+          <div class="input-field col s12">
+          <span>Customer name</span><br>
+            <input id="sub_1_3" name="sub_1_3" placeholder="Customer name" type="text">
+
+        </div>
+
+        <div class="input-field col s12">
+          <span>Phone number </span><br>
+            <input id="sub_1_4" name="sub_1_4" placeholder="Tel" type="tel">
+        </div>
+
+        <h1>Reach</h1>
+
+         <div class="input-field col s12">
+          <span>Name of outlet bought from</span><br>
+            <input id="sub_1_5" name="sub_1_5" placeholder="Enter the name of outlet" type="text">
+        </div>
+
+        <h1>Engagement</h1>
+
+        <div class="input-field col s12">
+          <span>Query -Number of consumers Reached per Day</span><br>
+            <input id="sub_1_6" name="sub_1_6" placeholder="Number of consumers reached per day" type="number">
+
+        </div>
+
+        <div class="input-field col s12">
+          <span>Participated -Number of participants Reached per Day </span><br>
+            <input id="sub_1_7" name="sub_1_7" placeholder="Number of participants Reached per Day" type="number">
+        </div>
+        <h1>Transactions</h1>
+
+        <div class="input-field col s12">
+          <span>Card or Visa On Mobile</span><br>
+          <select name="sub_1_8" class="select_els" id="sub_1_8" style="display: block;">
+            <option value="">Select your answer</option>
+            <option  value="Visa on Mobile">VOM</option>
+            <option  value="Card">CARD</option>
+          </select>
+        </div>
+
+        <div class="input-field col s12">
+          <span>Amount ( TSHs.)</span><br>
+            <input id="sub_1_9" name="sub_1_9" placeholder="Amount ( TSHs.)" type="number">
+        </div>
+
+        <div class="input-field col s12">
+          <span>Receipt number</span><br>
+            <input id="sub_1_10" name="sub_1_10" placeholder="Receipt number" type="text">
+        </div>
+
+        <h1>Gamefication</h1>
+
+        <div class="input-field col s12">
+          <span>Game played </span><br>
+            <input id="sub_1_11" name="sub_1_11" placeholder="lucky dip,Darts,Playstation etc" type="text">
+        </div>
+        <h1>Quantity of Prizes Won</h1>
+        <div class="input-field col s12">
+          <span>Voucher Value Won </span><br>
+            <input id="sub_1_12" name="sub_1_12" placeholder="Voucher Value Won" type="number">
+        </div>
+
+        <div class="input-field col s12">
+          <span>Tshirt </span><br>
+            <input id="sub_1_13" name="sub_1_13" placeholder="Tshirt" type="number">
+        </div>
+
+        <div class="input-field col s12">
+          <span>Pens</span><br>
+            <input id="sub_1_14" name="sub_1_14" placeholder="Pens" type="number">
+        </div>
+
+        <div class="input-field col s12">
+          <span>Water Bottle</span><br>
+            <input id="sub_1_15" name="sub_1_15" placeholder="Water Bottle" type="number">
+        </div>
+
+        <div class="input-field col s12">
+          <span>Note book</span><br>
+            <input id="sub_1_16" name="sub_1_16" placeholder="Note book" type="number">
+        </div>
+
+        <div class="input-field col s12">
+          <span>Key Ring</span><br>
+            <input id="sub_1_17" name="sub_1_17" placeholder="Key Ring" type="number">
+        </div>
+
+        <div class="input-field col s12">
+          <span>Flash</span><br>
+            <input id="sub_1_18" name="sub_1_18" placeholder="Flash" type="number">
+        </div>
+
+        <div class="input-field col s12">
+          <span>EarPods</span><br>
+            <input id="sub_1_19" name="sub_1_19" placeholder="EarPods" type="number">
+        </div>
+
+        <div class="input-field col s12">
+          <span>Comments</span><br>
+            <input id="sub_1_20" name="sub_1_20" placeholder="Comments" type="text">
+        </div>
+
+        <div class="input-field col s12">
+          <span>Photo of The Voucher Issued </span><br>
+          <input type="file"
+          class="filepond"
+          name="sub_1_21"
+          id="sub_1_21"
+          multiple
+          data-allow-reorder="true"
+          data-max-file-size="3MB"
+          data-max-files="3">
+        </div>
+
+        <div class="input-field col s12 center_it">
+        <button id="branding_btn" class="btn-large  margin-bottom waves-effect waves-light pick_color">  Upload Information <i class="fa fa-send"></i></button>
+      </div>
+
+</form>
+
+  </div>
+
+ </div>
+
+ <!-- filepond lib -->
+ <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+ <script src="https://unpkg.com/filepond-plugin-image-edit/dist/filepond-plugin-image-edit.js"></script>
+ <script src="https://unpkg.com/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.js"></script>
+ <script src="https://unpkg.com/filepond-plugin-image-exif-orientation/dist/filepond-plugin-image-exif-orientation.js"></script>
+
+ <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+<script type="text/javascript" src="js/localforage.min.js"></script>
+<script type="text/javascript" src="js/sweet.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="util/summary.js"></script>
+<script type="text/javascript" src="util/mall.js"></script>
+
+
+<script type="text/javascript">
+
+  // unchecked radio button
+// $(document).ready(function(){
+//   $('.row-checked input[type="radio"]').click(function(){
+//     var parentDiv = $(this).closest('.row-checked');
+//     var name = $(this).attr('name');
+//     parentDiv.find('input[type="radio"]').each(function(){
+//       if($(this).attr('name') !== name) {
+//         $(this).prop('checked', false);
+//       }
+//     });
+//   });
+// });
+
+
+app.prefill();
+
+</script>
+</body>
+</html>

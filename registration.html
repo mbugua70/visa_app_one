@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>VISA</title>
+
+	<link rel="stylesheet" href="css/materialize.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+
+	<nav>
+		<div class=" topmenu left_menu">
+
+		</div>
+		<div class=" topmenu centered_menu">
+			Registration
+		</div>
+		<div class=" topmenu right_menu">
+		<a href="index.html" ><i class="fa fa-home fa-2x"></i></a>
+		</div>
+
+		 </nav>
+
+  <ul id="slide-out" class="sidenav">
+  	 <li class="close-it">
+  	 	<a class="sidenav-close" href="#!"><i class="fa fa-3x fa-times-circle"></i></a></li>
+    <li class="tar">
+    	<div class="user-view">
+      <div class="background">
+        <img src="images/dummy.jpg">
+      </div>
+
+      <a href="#name"><span id="profile_name" class="white-text name">BA</span></a>
+      <a href="#email"><span id="profile_stage" class="white-text email"></span></a>
+    </div>
+</li>
+
+
+
+  </ul>
+ <div class="main_body">
+  <div class="row" id="top_row">
+
+
+  <div class="row parcel_form">
+<hr>
+
+<form id="parcel_form">
+
+
+<div class="input-field col s12">
+          <span>Name</span><br>
+            <input id="ba_name" placeholder="Your Name" type="text">
+
+        </div>
+
+    <div class="input-field col s12">
+          <span>Your Phone Number</span><br>
+            <input id="ba_phone" placeholder="Your Phone Number" type="tel">
+    </div>
+
+
+       <div class="input-field col s12">
+          <span>Region</span><br>
+            <input id="ba_region" placeholder="Region" type="text">
+      </div>
+
+
+           <div class="input-field col s12 center_it">
+        <button id="register_btn" class="btn-large  margin-bottom waves-effect waves-light pick_color" type="button">  Save Details  <i class="fa fa-send"></i></button>
+      </div>
+
+</form>
+
+
+
+
+
+
+  </div>
+
+
+
+ </div>
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+<script type="text/javascript" src="js/localforage.min.js"></script>
+<script type="text/javascript" src="js/sweet.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+<script type="text/javascript">
+	 M.AutoInit();
+
+          name= app.flashStore.getItem("name");
+          phone=app.flashStore.getItem("phone");
+          region=app.flashStore.getItem("region");
+
+          $("#ba_name").val(name);
+          $("#ba_phone").val(phone);
+          $("#ba_region").val(region);
+
+
+</script>
+</body>
+</html>
